@@ -1,0 +1,17 @@
+*
+{
+    margin: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.co{
+    text-align: center;
+}
