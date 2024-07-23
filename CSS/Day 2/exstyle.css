@@ -1,0 +1,9 @@
+.ex
+{
+    border: 2px solid rgb(0, 255, 0);
+    color: rgb(227, 227, 21);
+    background-color:black;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;   
+}
