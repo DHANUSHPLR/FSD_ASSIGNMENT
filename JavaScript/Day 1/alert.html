@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            alert("Welcome to JS");
+        }
+        function add(a,b){
+            let sum=a+b;
+            alert("sum : "+sum);
+        }
+        function sub(a,b){
+            let s=a-b;
+            alert("subtraction : "+s);
+        }
+        function mul(a,b){
+            let mul=a*b;
+            alert("multiply : "+mul);
+        }
+        function div(a,b){
+            let d=a/b;
+            alert("divition : "+d);
+        }
+
+    </script>
+    <style>
+        button{
+            text-align: center;
+            padding: 10px;
+            margin-left: 60px;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fun()">Click Me</button>
+    <br><br>
+    <button onclick="add(10,30)">Addition</button>
+    <br><br>
+    <button onclick="sub(50,30)">Subtraction</button>
+    <br>
+    <br>
+    <button onclick="mul(10,3)">Mutiplication</button>
+    <br><br>
+    <button onclick="div(50,30)">Division</button>
+</body>
+</html>

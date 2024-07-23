@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(){
+            let a=parseInt(document.getElementById("n").value);
+            // document.write(a);
+            let prime=true;
+            if(a==1)
+            {
+                document.write(" 1 is either Prime or composite");
+            }
+            else if(a>1)
+            {
+                for(let i=2;i<a;i++)
+                {
+                    if(a%i==0)
+                    {
+                        prime=false;
+                        break;
+                    }   
+                }
+                if(prime)
+                {
+                    document.write("Prime");
+                }
+                else{
+                    document.write("Not Prime");
+                }
+            }
+            else{
+                document.write("Not Prime");
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the number <input type="text" id="n">
+    <br>
+    <br>
+    <button onclick="prime()"> View Prime or not</button>
+    <div id="res">
+
+    </div>
+</body>
+</html>

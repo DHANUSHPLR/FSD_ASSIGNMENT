@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function str(){
+            let a=document.getElementById("n1").value;
+            let b=document.getElementById("n2").value;
+            let c=document.getElementById("op").value;
+            let r=" ";
+            if(c=='length')
+            {
+                r=a.length;
+            }
+            else if(c=='charAt')
+            {
+                r=a.charAt(2);
+            }
+            else if(c=='slice'){
+                r=a.slice(2,4);
+            }
+            else if(c=='substring'){
+                r=a.substring(2,4);
+            }
+            else if(c=='substr'){
+                r=a.substr(2,4);
+            }
+            else if(c=='upper'){
+                r=a.toUpperCase();
+            }
+            else if(c=='lower'){
+                r=a.toLowerCase();
+            }
+            else if(c=='concat'){
+                r=a.concat(b);
+            }
+            else if(c=='trim'){
+                r=a.trim();
+            }
+            else if(c=='trimstart'){
+                r=a.trimStart();
+            }
+            else if(c=='trimend'){
+                r=a.trimEnd();
+            }
+            else if(c=='repeat'){
+                r=a.repeat(3);
+            }
+            else if(c=='replace'){
+                r=a.replace("Welcometojs",abcd);
+            }
+            else if(c==''){
+                r=a.replaceAll("Welcometojs",abcd);
+            }
+            else if(c==''){
+                r=a.split("").a[0];
+            }
+            else{
+                b="Worng input";
+            }
+            document.getElementById("res").innerHTML=r;
+        }
+
+    </script>
+</head>
+<body>
+    Enter the String <input type="text" id="n1">
+    Enter the String <input type="text" id="n2">
+
+    <br>
+    <br>
+    <select id="op">
+        <option value="length">Length</option>
+        <option value="charAt">CharAt</option>
+        <option value="slice">slice</option>
+        <option value="substring">substring</option>
+        <option value="substr">substr</option>
+        <option value="upper">upper</option>
+        <option value="lower">lower</option>
+        <option value="concat">concat</option>
+        <option value="trim">trim</option>
+        <option value="trimstart">trimstart</option>
+        <option value="trimend">trimend</option>
+        <option value="repeat">repeat</option>
+        <option value="replace">replace</option>
+        <option value="replaceall">replaceall</option>
+        <option value="split">split</option>
+
+
+    </select>
+    <br><br>
+    <button onclick="str()"> Click to view</button>
+    <div id="res">
+
+    </div>
+</body>
+</html>

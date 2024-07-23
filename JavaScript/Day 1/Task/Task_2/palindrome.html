@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function palin(){
+            let a=document.getElementById("n").value;
+            let r="";
+            for (let i=a.length-1;i>=0;i--)
+        {
+            r+=a.charAt(i);
+        }
+        if(a==r)
+        {
+            document.getElementById("res").innerHTML="Palindrome"
+        }
+        else{
+            document.getElementById("res").innerHTML="Not Palindrome"
+
+        }
+
+        }
+    </script>
+</head>
+<body>
+    Enter the text <input type="text" id="n">
+    <br>
+    <br>
+    <button onclick="palin()"> View Palindrome or not</button>
+    <div id="res"></div>
+</body>
+</html>
