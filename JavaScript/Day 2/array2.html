@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function myfun()
+    {
+        let s=["c ","c++ ","Java ","Python"];
+        document.write("Array Element : " +s);
+        document.write("<br>Length of Array : " +s.length);
+        document.write("<br>first of Array : " +s[0]);
+        document.write("<br>second of Array : " +s[s.length-1]);
+        s.push("C#");
+        document.write("<br>Array Element : " +s);
+        s.pop();
+        // s.pop();
+        document.write("<br>Array Element : " +s);
+        document.write("<br>Array Element : ");
+        for(let i=0;i<s.length;i++)
+    {
+        document.write("<br>" +s[i]);
+
+    }
+
+
+    }
+</script>
+</head>
+<body onload="myfun()">
+    
+</body>
+</html>

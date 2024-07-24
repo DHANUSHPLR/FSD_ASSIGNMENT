@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const s=()=>10+20;
+        document.write("<br> Addition : "+s());
+        const sub=()=>10-20;
+        document.write("<br> sub : "+sub());
+        const mul=()=>10*20;
+        document.write("<br> mul : "+mul());
+        const div=(x,y)=>x/y;
+        document.write("<br> division : "+div(20,10));
+        const big=(x,y) =>{
+            if(x>y)
+        {
+            return x;
+        }
+        else{
+            return y;
+        }
+        };
+        document.write("<br>Biggest no : "+(10,100));
+        const fact=(x)=>{
+        var f=1;
+        for(let i=1;i<=x;i++)
+        {
+            f*=i;
+        }
+        return f;
+    };
+        document.write("<br>factorial no : "+fact(5));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" name="ip">
+            <div class="first">
+                <input type="text" placeholder="0" name="dis" class="in-box">
+            </div>
+            <div class="first">
+                <input type="button" value="C" onclick="ip.dis.value=''">
+                <input type="button" value="%" onclick="ip.dis.value+='%'">
+                <input type="button" value="<=" onclick="ip.dis.value=dis.value.toString().slice(0,-1)">
+                <input type="button" value="/" onclick="ip.dis.value+='/'">
+            </div>
+            <div class="first">
+                <input type="button" value="7" onclick="ip.dis.value+='7'">
+                <input type="button" value="8" onclick="ip.dis.value+='8'">
+                <input type="button" value="9" onclick="ip.dis.value+='9'">
+                <input type="button" value="*" onclick="ip.dis.value+='*'">
+            </div>
+            <div class="first">
+                <input type="button" value="4" onclick="ip.dis.value+='4'">
+                <input type="button" value="5" onclick="ip.dis.value+='5'">
+                <input type="button" value="6" onclick="ip.dis.value+='6'">
+                <input type="button" value="-" onclick="ip.dis.value+='-'">
+            </div>
+            <div class="first">
+                <input type="button" value="1" onclick="ip.dis.value+='1'">
+                <input type="button" value="2" onclick="ip.dis.value+='2'">
+                <input type="button" value="3" onclick="ip.dis.value+='3'">
+                <input type="button" value="+" onclick="ip.dis.value+='+'">
+            </div>
+            <div class="first">
+                <input type="button" value="00" onclick="ip.dis.value+='00'">
+                <input type="button" value="0" onclick="ip.dis.value+='0'">
+                <input type="button" value="." onclick="ip.dis.value='.'">
+                <input type="button" value="=" onclick="ip.dis.value=eval(ip.dis.value)">
+            </div>
+        </form>
+    </div>
+    <script src="./ṣcript.js"></script>
+</body>
+</html>
