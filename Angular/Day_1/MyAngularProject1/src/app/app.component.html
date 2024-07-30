@@ -1,0 +1,20 @@
+
+<h1>Structural And Attribute Directive Example</h1>
+<br>
+<button (click)="changeflag()">Show or Hide Div</button>
+<br>
+<div *ngIf="flag" [ngStyle]="myStyle">
+  <br>
+  <ul>
+    <li *ngFor = "let v of vehicles" (click)="setSelectedItem(v)">{{v}}</li>
+    <br>
+    <b>You have selected :{{selec}}</b>
+    <br>
+    <div [ngSwitch]="selectedVehicle">
+      <font color="red" *ngSwitchCase="'Series 5'">5 Series</font>
+      <font color="red" *ngSwitchCase="'M4'">5 Series</font>
+      <font color="red" *ngSwitchCase="'M5'">5 Series</font>
+      <font color="red" *ngSwitchCaseDefault>Invalid</font>
+    </div>
+  </ul>
+</div>
