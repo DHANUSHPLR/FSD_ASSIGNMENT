@@ -1,20 +1,18 @@
+<!-- <table width="80%">
+  <tr>
+    <th><a routerLink="home">Home</a></th>
+    <th><a routerLink="about">About</a></th>
+    <th><a routerLink="contact">Contact</a></th>
+  </tr>
+</table>
 
-<h1>Structural And Attribute Directive Example</h1>
-<br>
-<button (click)="changeflag()">Show or Hide Div</button>
-<br>
-<div *ngIf="flag" [ngStyle]="myStyle">
-  <br>
-  <ul>
-    <li *ngFor = "let v of vehicles" (click)="setSelectedItem(v)">{{v}}</li>
-    <br>
-    <b>You have selected :{{selec}}</b>
-    <br>
-    <div [ngSwitch]="selectedVehicle">
-      <font color="red" *ngSwitchCase="'Series 5'">5 Series</font>
-      <font color="red" *ngSwitchCase="'M4'">5 Series</font>
-      <font color="red" *ngSwitchCase="'M5'">5 Series</font>
-      <font color="red" *ngSwitchCaseDefault>Invalid</font>
-    </div>
-  </ul>
-</div>
+<div>
+  This is the space for new Component.
+  <router-outlet></router-outlet>
+</div> -->
+
+<h1>
+  Add:{{sum}}
+  <br><br>
+  Sub:{{sub}}
+</h1>
